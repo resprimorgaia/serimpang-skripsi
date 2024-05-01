@@ -1,0 +1,89 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Serimpang{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+{% endblock %}
+
+{% block content %}
+<main>
+    <!-- Hero Section Begin -->
+    <section class="about-serimpang">
+        <div class="container">
+            <div class="row">
+                <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="fade-right" data-aos-duration="1000">
+                    <figure class="serimpang-image">
+                        <img src="{{ url_for('static', filename='img/serimpang-logo.png') }}" alt="logo-serimpang">
+                    </figure>
+                </div>
+                <div class="col col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 content-text" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="title">
+                        <h1 class="fw-semibold">Misi Serimpang</h1>
+                    </div>
+                    <p> Simplisia rimpang adalah rimpang yang telah mengalami proses menjadi simplisia yaitu pengeringan. Rimplisia rimpang 
+                        memiliki bentuk dan warna yang hampir identik, yang membuatnya sulit dibedakan oleh orang biasa. Simplisia rimpang 
+                        erat kaitanya dengan dunia farmasi sebagai bahan obat herbal. Ketepatan pemilihan bahan baku obat herbal bergantung 
+                        pada jenis simplisia rimpang yang digunakan karena setiap jenis simplisia rimpang memiliki khasiat khusus yang unik. 
+                        Klasifikasi simplisia rimpang secara manual memang dapat dilakukan oleh mereka yang sudah tahu betul identitas dari 
+                        masing-masing simplisia, tetapi masih banyak masyarakat yang awam akan rimpang apalagi sudah dalam bentuk simplisia 
+                        seperti kalangan orang perkotaan, pelajar, maupun lainnya. Oleh karena itu, Serimpang diciptakan untuk membantu 
+                        meningkatkan produktivitas dalam mengklasifikasi jenis simplisia rimpang dengan cepat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Teams Section Begin -->
+    <section id="teams" class="teams">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 text-center m-auto">
+                    <span class="section-title">Kontak</span>
+                    <h2 class="fw-bold section-sub-title mt-2">Tentang Pengembang</h2>
+                </div>
+            </div>
+            <div class="card-list mt-5 mb-5">
+                <div class="card-items">
+                    <div class="profile-picture mb-3">
+                        <picture class="line-pict">
+                            <img src="{{ url_for('static', filename='img/team/mei.jpg') }}" alt="Resnanda" class="picture" />
+                        </picture>
+                    </div>
+                    <div class="card-information">
+                        <h3>Rio Meisya <span class="fw-bold">Resnanda</span></h3>
+                        <span class="roles">Pengembang</span>
+                        <p class="desc">
+                            Valar Morgulis Valar Dohaeris
+                        </p>
+                    </div>
+                    <div class="mail-box mb-3">
+                        <p>teamprivate.resnanda@gmail.com</p>
+                    </div>
+                    <div class="socmed-icons">
+                        <a href="https://www.x.com/garimakunbaik" target="_blank"><i
+                                class="bi bi-twitter"></i></a>
+                        <a href="https://www.instagram.com/rm_resnanda/" target="_blank"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/rio-meisya-resnanda-649a77287" target="_blank"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/resprimorgaia" target="_blank"><i class="bi bi-github"></i></a>
+                    </div>
+                    <img src="{{ url_for('static', filename='img/rectangle-bottom.svg') }}" alt="rectangle" class="rect-bottom" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Teams Section End -->
+</main>
+{% endblock %}
+
+{% block footer %}
+{% include 'includes/footer.html' %}
+{% endblock %}
+
+<!-- scripts JS-->
+{% block javascripts %}
+<script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+{% endblock %}

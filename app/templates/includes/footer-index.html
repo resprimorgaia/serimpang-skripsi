@@ -1,0 +1,40 @@
+<footer class="container-fluid mt-5">
+    <div class="row info">
+        <div class="col col-xl-3 col-lg-3 col-md-12 col-sm-12 logo-socmed mb-5">
+            <img src="{{ url_for('static', filename='img/serimpang.png') }}" alt="logo-serimpang" />
+        </div>
+        <div class="col col-xl-9 col-lg-9 col-md-12 col-sm-12 useful-links">
+            <div class="links-items" data-aos="fade-left" data-aos-duration="1000">
+                <div class="website">
+                    <span>Website</span>
+                    <div class="web-links">
+                        <a href="#top">Beranda</a>
+                        <a href="#about-us">Tentang Kami</a>
+                        <a href="{{ url_for('class_serimpang') }}">Mesin Klasifikasi</a>
+                    </div>
+                </div>
+                <div class="more">
+                    <span>More</span>
+                    <div class="more-links">
+                        <a href="#">Blog</a>
+                        <a href="#faq">FAQ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="address" data-aos="fade-left" data-aos-duration="1000">
+                <div class="send-mail">
+                    <i class="bi bi-envelope"></i>
+                    <span>teamprivate.resnanda@gmail.com</span>
+                </div>
+                <div class="github">
+                    <i class="bi bi-github"></i>
+                    <a href="https://github.com/resprimorgaia" target="_blank"><span>Project
+                            Repository</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright mb-4">Copyright &copy;
+        <script>document.write(new Date().getFullYear())</script> Serimpang by `resnanda`
+    </div>
+</footer>

@@ -1,0 +1,81 @@
+/* Styleguide */
+@import "styleguide.css";
+
+
+/* Body Section */
+body {
+    position: relative;
+}
+
+
+/* Navbar Section */
+.navbar {
+    background-color: var(--green-primary);
+}
+
+
+/* Predict Fruits Section */
+.predicted-serimpang {
+    padding: 7rem 0 13rem 0;
+    min-height: 100vh;
+    background-color: var(--cream);
+}
+
+.title-predict {
+    color: var(--greenish-black);
+    font-size: 26px;
+}
+
+.predicted-result {
+    padding: 0.8rem;
+    border: 2px dashed var(--red-black);
+    border-radius: 0.25rem;
+}
+
+.predicted-result>p{
+    color: var(--black-7);
+}
+
+.predicted-serimpang button {
+    width: 100%;
+    font-weight: 500;
+    border: 2px solid var(--cream);
+    background-color: var(--green-light);
+}
+
+.predicted-serimpang button:active {
+    border-color: var(--green-light) !important;
+    background-color: var(--green-primary) !important;
+}
+
+.predicted-serimpang button:hover {
+    border-color: var(--cream);
+    background-color: var(--green-primary);
+}
+
+
+/* Footer Section */
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 4rem;
+    background-color: var(--green-primary);
+    display: flex;
+}
+
+.footer>.container {
+    margin: auto;
+}
+
+.footer-content>p {
+    margin: 0;
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .footer-content>p {
+        font-size: 14px;
+    }
+}

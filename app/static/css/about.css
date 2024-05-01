@@ -1,0 +1,327 @@
+/* Styleguide */
+@import "styleguide.css";
+
+
+/* Body Section */
+body {
+    position: relative;
+}
+
+
+/* Hero Section */
+.about-serimpang {
+    background-color: var(--green-primary);
+    display: flex;
+    margin: 0 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-bottom: 50px;
+    transform: skewY(357deg);
+    transform-origin: top left;
+    position: relative;
+}
+
+.about-serimpang>.container {
+    margin: 120px auto 0px;
+    transform: skewY(-357deg);
+}
+
+.serimpang-image>img {
+    width: 100%;
+}
+
+.about-serimpang>.container>.row>.content-text {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-left: 80px;
+    margin-top: -10px;
+}
+
+.content-text>.title {
+    display: flex;
+    margin-bottom: 15px;
+    flex-direction: column;
+}
+
+.content-text>.title>h1 {
+    color: var(--white-light-shade);
+    font-size: 48px;
+}
+
+.content-text>.title>img {
+    width: 350px;
+    height: 40px;
+}
+
+.content-text>p {
+    text-align: justify;
+    color: var(--white-9);
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .about-serimpang {
+        height: auto;
+    }
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .about-serimpang {
+        padding-bottom: 50px;
+    }
+
+    .about-serimpang>.container {
+        margin: 100px auto 0px;
+    }
+
+    .serimpang-image {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .about-serimpang>.container>.row {
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .about-serimpang>.container>.row>.content-text {
+        text-align: center;
+        max-width: 80%;
+        padding: 0 12px;
+        margin: 0 auto;
+    }
+
+    .content-text>.title {
+        visibility: hidden;
+        margin-bottom: 0px;
+        width: 0px;
+        height: 0px;
+    }
+
+    .content-text>p {
+        text-align: center;
+        width: 100%;
+        margin-top: -2rem;
+        font-size: 14px;
+        line-height: 25px;
+    }
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .about-serimpang {
+        padding-bottom: 40px;
+    }
+
+    .serimpang-image {
+        margin: 0 auto;
+        max-width: 50%;
+    }
+
+    .about-serimpang>.container>.row {
+        flex-direction: column;
+        max-width: 99%;
+    }
+
+    .content-text>p {
+        margin-top: 0rem;
+    }
+}
+
+
+/* Teams Section */
+.teams {
+    padding: 7rem 0;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem 3rem;
+    justify-content: space-evenly;
+}
+
+.card-items {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    padding: 2rem 0;
+    flex-direction: column;
+    margin: 0 15px;
+    background-color: var(--white);
+    border: 1px solid var(--green-primary);
+    border-radius: 50px 50px 30px 30px;
+    transition: all 0.3s ease-out;
+}
+
+.rect-bottom {
+    top: 345px;
+    left: -2px;
+    width: 300px;
+    height: 60px;
+    position: absolute;
+    z-index: 2;
+}
+
+.profile-picture {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.line-pict {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    display: inline-block;
+    background-color: transparent;
+    border-top: 4px solid var(--green-light);
+    border-left: 4px solid transparent;
+    border-right: 4px solid var(--green-light);
+    border-bottom: 4px solid var(--green-light);
+}
+
+.picture {
+    width: 100px;
+    height: 100px;
+    box-sizing: content-box;
+    margin: 1px auto;
+    border: 2px solid var(--green-blip);
+    border-radius: 100px;
+}
+
+.pict-ellipse {
+    top: -45px;
+    right: -25px;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+}
+
+.card-information {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+.card-information>h3 {
+    color: var(--red-darken);
+    width: 100%;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.card-information>.roles {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.card-information>.desc {
+    color: var(--red-darken);
+    width: 90%;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.mail-box {
+    padding: 4px 20px;
+    margin: 0 auto;
+    align-items: center;
+    border: 2px solid var(--green-primary);
+    border-radius: 10px;
+    background-color: var(--green-primary);
+}
+
+.mail-box>p {
+    width: 100%;
+    color: var(--white);
+    font-size: 12px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.socmed-icons {
+    position: relative;
+    width: 80%;
+    margin: 2px auto;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 99;
+}
+
+.socmed-icons>a>i {
+    color: var(--green-primary);
+    width: 48px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.socmed-icons>a>:hover {
+    color: var(--green-light);
+}
+
+.card-items:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0) !important;
+    box-shadow: 0 24px 36px var(--shadow-2),
+        0 24px 46px var(--green-teal) !important;
+}
+
+.card-items:active {
+    transform: scale(1) translateZ(0) !important;
+    box-shadow: 0 15px 24px var(--shadow-2),
+        0 15px 24px var(--green-teal) !important;
+}
+
+ /* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    .card-list {
+        gap: 4rem 0rem;
+    }
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .card-list {
+        gap: 4rem 2rem;
+    }
+}
+
+
+/* Footer Section */
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 4rem;
+    background-color: var(--green-primary);
+    display: flex;
+}
+
+.footer>.container {
+    margin: auto;
+}
+
+.footer-content>p {
+    margin: 0;
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .footer-content>p {
+        font-size: 14px;
+    }
+}

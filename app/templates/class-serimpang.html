@@ -1,0 +1,61 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Serimpang{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/class-serimpang.css') }}">
+{% endblock %}
+
+{% block javascript %}
+<script src="{{ url_for('static', filename='js/sticky-nav.js') }}" defer></script>
+{% endblock %}
+
+{% block content %}
+<main>
+    <!-- Predict Section Begin -->
+    <section class="serimpang">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title text-center mb-5">
+                        <h3 class="fw-bold mb-5">Klasifikasi Simplisia Rimpang</h3>
+                        <img src="{{ url_for('static', filename='img/gallery-image.svg') }}" alt="image" width="150">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 mx-auto">
+                    <form action="{{ url_for('result_class_serimpang') }}" method="POST" enctype="multipart/form-data">
+                        <div class="input-group bg-white mb-4 p-2">
+                            <input onchange="readURL(this);" name="file" type="file" id="upload" class="form-control">
+                            <div class="input-group-append">
+                                <label for="upload" class="btn btn-light">
+                                    <i class="fas fa-cloud-upload-alt text-muted"></i><small
+                                        class="text-uppercase fw-normal text-muted">Pilih File</small>
+                                </label>
+                            </div>
+                            <label id="upload-label" class="fw-normal text-muted">Drop Gambar Disini</label>
+                        </div>
+                        <p class="fst-italic text-center">Gambar yang diunggah akan dirender di dalam kotak di bawah ini.
+                        </p>
+                        <div class="image-area bg-white my-4"><img id="imageResult" src="" alt=""
+                                class="img-fluid rounded shadow-sm mx-auto d-block"></div>
+                        <button type="submit" class="btn btn-dark">Klasifikasi</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Predict Section End -->
+</main>
+{% endblock %}
+
+{% block footer %}
+{% include 'includes/footer.html' %}
+{% endblock %}
+
+<!-- scripts JS-->
+{% block javascripts %}
+<script src="{{ url_for('static', filename='js/show-uploads.js') }}" defer></script>
+<script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+{% endblock %}

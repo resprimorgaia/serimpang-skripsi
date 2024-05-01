@@ -1,0 +1,4 @@
+Dataset yang saya gunakan berisi 4 kelas dari simplisia rimpang yaitu: lengkuas, temulawak, jahe, dan kunyit.
+
+Dataset saya foto sendiri menggunakan kamera hp Redmi 10 5G, dan saya simpang di gdrive.
+Dapat diakses di: https://drive.google.com/drive/folders/1tahznNQtyx94LsmMpWfegVSd0DBkzZ8T?usp=drive_link

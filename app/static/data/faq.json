@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "question": "Bagaimana Serimpang dapat membantu saya?",
+        "answer": "Karena rimpang susah dibedakan apalagi jika sudah dalam bentuk simplisia, maka dari itu Serimpang hadir. Serimpang adalah utilitas canggih yang menawarkan cara tercepat untuk mengklasifikasikan jenis simplisia rimpang. Sistem akan bekerja untuk mengklasifikasikan jenis simplisia Anda hanya dengan menunggu beberapa detik."
+    },
+    {
+        "id": "2",
+        "question": "Apa saja keuntungan dari Serimpang?",
+        "answer": "Bagi siswa jurusan farmasi, aplikasi ini dapat memudahkan dalam mengenali simplisia rimpang dengan lebih mandiri dapat digunakan kapan dan dimana saja. Bagi pendidik dan institusi pendidikan, sebagai media pengajaran guru dalam pembelajaran identifikasi simplisia rimpang yang lebih interaktif dan efektif. Bagi industri bidang farmasi dan masyarakat luas, dapat meningkatkan produktivitas yang tinggi dengan biaya yang rendah karena proses klasifikasi jenis simplisia rimpang tidak harus dilakukan secara manual."
+    },
+    {
+        "id": "3",
+        "question": "Bagaimana cara menggunakan Serimpang?",
+        "answer": "Untuk mengidentifikasi simplisia rimpang, Anda hanya perlu mengunggah gambar di alat bawaan aplikasi kami, dan aplikasi ini akan memberi tahu Anda dalam hitungan detik!"
+    },
+    {
+        "id": "4",
+        "question": "Simplisia rimpang apa saja yang dapat diklasifikasikan oleh Serimpang?",
+        "answer": "Aplikasi kami masih terbatas pada klasifikasi kunyit, jahe, temulawak, dan lengkuas. Kami akan terus berusaha untuk mengembangkan aplikasi ini agar dapat berfungsi dengan menerima lebih banyak jenis buah di masa depan."
+    },
+    {
+        "id": "5",
+        "question": "Gambar apa saja yang boleh diunggah?",
+        "answer": "Aplikasi ini hanya dapat menerima input berupa gambar dengan ekstensi file .JPG, .JPEG dan .PNG saja."
+    },
+    {
+        "id": "6",
+        "question": "Salah satu hasil tidak akurat, apa yang harus saya lakukan?",
+        "answer": "Karena aplikasi ini mengandalkan gambar untuk diklasifikasi maka, mengubah sedikit sudut atau jarak dapat membantu, dan memastikan gambar terfokus pada objek yang ingin Anda identifikasi serta faktor pencahayaan yang cukup, kemungkinan besar akan membantu."
+    }
+]

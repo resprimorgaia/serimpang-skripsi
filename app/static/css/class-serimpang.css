@@ -1,0 +1,136 @@
+/* Styleguide */
+@import "styleguide.css";
+
+
+/* Body Section */
+body {
+    position: relative;
+}
+
+
+/* Navbar Section */
+.navbar {
+    background-color: var(--green-primary);
+}
+
+
+/* Serimpang Section */
+.serimpang {
+    background-color: var(--cream);
+    padding: 7rem 0 13rem 0;
+    min-height: 100vh;
+}
+
+.title>h3 {
+    color: var(--greenish-black);
+    font-size: 26px;
+}
+
+.title>img {
+    margin: 0 auto;
+}
+
+form>.input-group {
+    box-shadow: 0px 0px 30px var(--shadow-3);
+    border-radius: 0.25rem;
+    height: 100px;
+}
+
+#upload {
+    opacity: 0;
+}
+
+#upload-label {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+}
+
+.input-group-append>label {
+    top: 27%;
+    background-color: var(--purple-white);
+    border-color: var(--purple-white-light);
+}
+
+.input-group-append i {
+    margin-right: 10px;
+}
+
+form>.image-area {
+    position: relative;
+    border: 2px dashed var(--red-black);
+    border-radius: 0.25rem;
+    padding: 1.1rem;
+}
+
+form>.image-area::before {
+    content: 'Hasil Gambar yang Diunggah';
+    color: var(--red-black-8);
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.85rem;
+    z-index: 1;
+}
+
+form>.image-area>img {
+    position: relative;
+    z-index: 2;
+}
+
+.serimpang button {
+    width: 100%;
+    font-weight: 500;
+    border: 2px solid var(--cream);
+    background-color: var(--green-light);
+}
+
+.serimpang button:active {
+    border-color: var(--green-light) !important;
+    background-color: var(--green-primary) !important;
+}
+
+.serimpang button:hover {
+    border-color: var(--cream);
+    background-color: var(--green-primary);
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    #upload-label {
+        font-size: 14px;
+    }
+}
+
+/* Footer Section */
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 4rem;
+    background-color: var(--green-primary);
+    display: flex;
+}
+
+.footer>.container {
+    margin: auto;
+}
+
+.footer-content>p {
+    margin: 0;
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .footer-content>p {
+        font-size: 14px;
+    }
+}

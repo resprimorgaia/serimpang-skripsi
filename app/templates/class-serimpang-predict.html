@@ -1,0 +1,47 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}Serimpang{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/class-serimpang-predict.css') }}">
+{% endblock %}
+
+{% block javascript %}
+<script src="{{ url_for('static', filename='js/sticky-nav.js') }}" defer></script>
+{% endblock %}
+
+{% block content %}
+<main>
+    <!-- Predict Result Section Begin -->
+    <div class="predicted-serimpang">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h3 class="title-predict fw-bold">Hasil Klasifikasi Simplisia</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="predicted-result bg-white text-center mb-4">
+                        <p class="fs-5 mb-0">Ini adalah Simplisia <span class="fw-bold">{{ prediction }}</span></p>
+                        <p class="fs-5 mb-0">dengan tingkat keyakinan mesin sebesar <span class="fw-bold">{{ confidence }}</span>.</p>
+                    </div>
+                    <a class="text-decoration-none" href="{{ url_for('class_serimpang') }}">
+                        <button type="button" class="btn btn-dark">Back</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Predict Result End -->
+</main>
+{% endblock %}
+
+{% block footer %}
+{% include 'includes/footer.html' %}
+{% endblock %}
+
+<!-- scripts JS-->
+{% block javascripts %}
+<script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+{% endblock %}

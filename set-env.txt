@@ -1,0 +1,27 @@
+=================================================================
+[Instalasi Environment & Packages Di Anaconda Untuk Pertama Kali]
+=================================================================
+
+1. Membuat virtual environment
+conda create -n venv python=3.9.13
+
+2. Mengaktifkan virtual environment yang sudah dibuat
+activate venv
+
+3. Mengunduh semua package yang dibutuhkan
+pip install -r requirements.txt
+
+4. Menjalankan aplikasi python di localhost
+python wsgi.py
+
+==================================================
+[Penggunaan Kedua Kali Dan Seterusnya Di Anaconda]
+==================================================
+
+activate venv
+
+==========================================
+[Menghapus Virtual Environment (OPSIONAL)]
+==========================================
+
+conda env remove --name venv
